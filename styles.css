@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    background: #f1f1f1;
+    color: #0f141e;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: #00f;
+}
+
+a:visited {
+    color: #0f141e;
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.photo {
+    width: 200px;
+    border-radius: 30px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, .25);
+}
+
+.info {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.info-text {
+    margin-left: 40px;
+}
+
+.info-text p {
+    margin: 0;
+    color: #86898f;
+    font-style: italic;
+}
+
+.info-text h4 {
+    margin-bottom: 10px;
+}
+
+.bg-yellow {
+    background: #fff9dc;
+}
+
+.bg-red {
+    background: #ffe5e5;
+}
+
+.bg-green {
+    background: #e5ffe7;
+}
+
+.card {
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.list-hobby {
+    padding: 0 20px;
+}
+
+.list-hobby li {
+    color: #86898f;
+    margin-bottom: 8px;
+}
+
+.table-cv {
+    width: 100%;
+}
+
+.table-cv th,
+.table-cv td {
+    border: 1px dashed #f99;
+    border-radius: 5px;
+}
+
+
+.table-cv th {
+    text-align: left;
+    padding: 5px 0;
+}
+
+.table-cv td {
+    padding: 5px 0;
+}
+
+.table-cv td:nth-child(2),
+.table-cv td:nth-child(3) {
+    color: #86898f;
+}
+
+.table-cv td:nth-child(2) {
+    font-style: italic;
+}
+
+.list-courses {
+    list-style: none;
+    padding: 0;
+}
+
+.list-courses li {
+    margin-bottom: 8px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #ccc;
+}
+
+.form h2 {
+    text-align: center;
+}
+
+.form-row {
+    display: flex;
+}
+
+.form-row .form-item {
+    width: 50%;
+}
+
+.form-row .form-item:first-child {
+    margin-right: 20px;
+}
+
+.form-item label {
+    display: block;
+    color: #86898f;
+  }
+
+  .form-item input,
+  .form-item textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
+  }
+
+.btn {
+    background: #111;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 700px) {
+    .info {
+        display: block;
+        text-align: center;
+      }
+
+    .form-row {
+      display: block;
+    }
+  
+    .form-row .form-item {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+

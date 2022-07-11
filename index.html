@@ -5,79 +5,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Kuzma, cv, resume">
-    <meta name="description" content="Этот сайт - резюме Кузьмы">
-    <title>Kuzma Resume</title>
+    <meta name="keywords" content="rusume, cv">
+    <meta name="description" content="Это сайт - резюме Магкея Евгенова">
+    <link rel="stylesheet" href="styles.css">
+    <title>M.E. Resume</title>
 </head>
 
 <body>
-    <img src="imgs/photo.png" alt="PHOTO" width="150">
-    <h1>Я Кузьма Прутков</h1>
-    <p>Я начинаю изучать курс по <strong>HTML и CSS</strong></p>
-    <p>Я люблю <em>мороженное и кататься</em></p>
-    <h3>Список социальных сетей:</h3>
-    <a href="https://developer.mozilla.org" target="_blank">Instagram</a>|
-    <a href="https://developer.mozilla.org" target="_blank">Telegram</a>|
-    <a href="https://developer.mozilla.org" target="_blank">Youtube</a>
-    <h2>Мои хобби</h2>
-    <ol>
-        <strong>
-            <li>Программирование</li>
-            <li>Чтение</li>
-            <li>Спорт</li>
-            <li>Музыка</li>
-        </strong>
-    </ol>
-    <h2>Опыт работы</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Мурзилка</td>
-                <td>ГлавРед</td>
-                <td>2000-2001</td>
-            </tr>
-            <tr>
-                <td>Гудок</td>
-                <td>Фельетонист</td>
-                <td>2004-2006</td>
-            </tr>
-            <tr>
-                <td>Континентал-Групп</td>
-                <td>Главный инженер</td>
-                <td>2006-2006</td>
-            </tr>
-            <tr>
-                <td>Банк Развитие</td>
-                <td>Младший.. научный сотрудник</td>
-                <td>2007-2021</td>
-            </tr>
-        </tbody>
-    </table>
 
-    <form>
-        <h2>Связаться со мной</h2>
-        <div>
-            <label for="name"><strong>Ваше имя:</strong></label>
-            <input type="text" id="name" placeholder="Введите имя">
+    <div class="container">
+
+        <div class="info">
+            <img class="photo" src="imgs/photo.png" alt="M.E. photo">
+            <div class="info-text">
+                <h1>Магкей Евгенов</h1>
+
+                <p>Я Клирик <strong>Тетраграмматона</strong> первого класса, элитный боец (<strong>лучший во всей
+                        Либрии</strong>). <strong>Totally addicted to bass</strong>. Я был <strong>Китай</strong>.</p>
+                <p>Я люблю <strong>мороженое</strong> и <strong>кататься</strong></p>
+                <div class="socials">
+                    <h4>Список социальных сетей</h4>
+                    <a href="#">InstAbram</a>
+                    |
+                    <a href="#">EleGram</a>
+                    |
+                    <a href="#">VotUbeY</a>
+                </div>
+            </div>
         </div>
-        <div>
-            <label for="email"><strong>Ваше email:</strong></label>
-            <input type="email" id="email" placeholder="Ваш email">
+
+        <div class="card bg-green">
+            <h2>Мои хобби</h2>
+            <ol class="list-hobby">
+                <li>Фотография</li>
+                <li>Фрейзеровка</li>
+                <li>ФорЭль</li>
+                <li>Просто Ф</li>
+            </ol>
         </div>
-        <div>
-            <label for="message"><strong>Введите сообщение:</strong></label>
-           <br>
-            <textarea id="message" cols="30" rows="5" placeholder="Ваш email"></textarea>
+
+        <div class="card bg-red">
+            <h2>Опыт работы</h2>
+            <table class="table-cv">
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Мурзилка</td>
+                        <td>ГлавРед</td>
+                        <td>2000-2001</td>
+                    </tr>
+                    <tr>
+                        <td>Гудок</td>
+                        <td>Фельетонист</td>
+                        <td>2004-2006</td>
+                    </tr>
+                    <tr>
+                        <td>Капитал-Строй</td>
+                        <td>Главный инженер</td>
+                        <td>2006-2006</td>
+                    </tr>
+                    <tr>
+                        <td>Банк Распитие</td>
+                        <td>Младший.. научный сотрудник</td>
+                        <td>2007-2021</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <button type="submit">Отправить!</button>
-    </form>
+
+        <div class="card bg-yellow">
+            <h2>Мои курсы</h2>
+            <ul class="list-courses">
+                <li><a href="#">Курс HTML и CSS</a></li>
+                <li><a href="#">Курс JavaScript</a></li>
+                <li><a href="#">Другие курсы</a></li>
+            </ul>
+        </div>
+
+        <form action="/" class="form">
+            <h2>Связаться со мной</h2>
+
+            <div class="form-row">
+                <div class="form-item">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
+
+                <div class="form-item">
+                    <label for="email">Ваш email</label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
+            </div>
+
+            <div class="form-item">
+                <label for="message">Ваше сообщение</label>
+                <textarea id="message" cols="30" rows="5" placeholder="Введите сообщение..."></textarea>
+            </div>
+
+            <button class="btn" type="submit">Отправить</button>
+
+        </form>
+    </div>
+
+    <br><br><br><br><br>
 
 </body>
 
